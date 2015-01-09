@@ -38,7 +38,7 @@ public class CannonballCameraFollow : CameraFollow
             }
             else
             {
-                // ... the target x coordinate should be a Lerp between the camera's current x position and the player's current x position.
+                // ... the target y coordinate should be a Lerp between the camera's current y position and the player's current y position.
                 targetY = Mathf.Lerp(transform.position.y, player.position.y - 3, ySmooth * Time.deltaTime);
             }
         }
